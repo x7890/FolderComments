@@ -11,17 +11,17 @@
 ## 使用方式
 - 从右侧“Release”页面下载exe，放在一个固定的文件夹，并启动，然后**勾选**下方“添加右键菜单‘文件夹备注’”。
 - 右击任意文件夹，点击“文件夹备注”或按X键，打开备注编辑窗口，如下两张图片所示。  
-<img src='img/menu.png' width='250' height=''/>  
-<img src='img/main.png' width='250' height=''/>   
-    按Ctrl+Enter或Shift+Enter可以换行。由于显示内容有限，不建议写入太长的备注。
-- **手动**开启Windows资源管理器的备注显示。具体步骤如下：
+    <img src='img/menu.png' width='250' height=''/>  
+    <img src='img/main.png' width='250' height=''/>   
+    按Ctrl+Enter或Shift+Enter可以换行。由于显示内容有限，不建议写入太长的备注。  
+- **手动**开启Windows资源管理器的备注显示。具体步骤如下：  
 1. 将查看模式切换到**详细信息**。目前仅发现详细信息模式和鼠标悬停时能够显示备注。  
-<img src='img/show1.png' width='300' height=''/>
-1. 默认情况下**没有显示**备注。需要右击任意一列的**顶部标题**，选择“其他”。  
-<img src='img/show2.png' width='500' height=''/>
-1. 按两次Page Down按键，在窗口中间找到“备注”，勾选并点击“确定”按钮。此时备注应成功显示。  
-<img src='img/show3.png' width='300' height=''/>
-<img src='img/show4.png' width='500' height=''/>
+<img src='img/show1.png' width='300' height=''/>  
+2. 默认情况下**没有显示**备注。需要右击任意一列的**顶部标题**，选择“其他”。  
+<img src='img/show2.png' width='500' height=''/>  
+3. 按两次Page Down按键，在窗口中间找到“备注”，勾选并点击“确定”按钮。此时备注应成功显示。  
+<img src='img/show3.png' width='300' height=''/>  
+<img src='img/show4.png' width='500' height=''/>  
 
 ## 说明
 - 备注列可以**向左拖动**，用于排序和管理。

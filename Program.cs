@@ -133,6 +133,14 @@ namespace FolderComments
     /// </summary>
     static class UserPath
     {
+        static readonly uint HWND_BROADCAST = 0xffff;
+        static readonly uint WM_SETTINGCHANGE = 0x001a;
+        static readonly uint SMTO_ABORTIFHUNG = 0x0002;
+
+        // https://learn.microsoft.com/zh-cn/windows/win32/winmsg/wm-settingchange
+        // https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta
+        [DllImport("user32", CharSet = CharSet.Unicode)] static extern int SendMessageTimeout(uint hWnd, uint Msg, IntPtr wParam, string lParam, uint fuFlags, uint uTimeout, IntPtr lpdwResult);
+
         public static bool Update(string test, bool toggle = false)
         {
             string path;
@@ -159,6 +167,7 @@ namespace FolderComments
                     key.SetValue("Path", path);
                 }
             }
+            SendMessageTimeout(HWND_BROADCAST, WM_SETTINGCHANGE, IntPtr.Zero, "Environment", SMTO_ABORTIFHUNG, 1000, IntPtr.Zero);
             return contains;
         }
     }
